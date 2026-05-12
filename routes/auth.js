@@ -122,7 +122,7 @@ router.post("/forgot-password", async (req, res) => {
       },
     });
 
-    const resetLink = `http://localhost:5173/reset-password/${resetToken}`;
+    const resetLink = `https://medmentor-frontend.onrender.com/reset-password/${resetToken}`;
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
